@@ -1,0 +1,18 @@
+;
+; BIND data file for linuxdr.pt
+;
+$TTL    3h
+@       IN      SOA     ns.windows.dr.pt admin.windows.dr.pt(
+    1       ; Serial
+    3h      ; Refresh after 3 houres
+    1h      ; Retry after 1 hour
+    1w      ; Expire after 1 week
+    1h )    ; Negative caching TTL of 1 day
+;
+@       IN      NS      ns.windows.dr.pt.
+
+windows.dr.pt.  IN      A       192.168.1.50
+ns              IN      A       192.168.1.50
+www             IN      CNAME   windows.dr.pt.
+mail            IN      A       192.168.1.50
+ftp             IN      CNAME   windows.dr.pt.
