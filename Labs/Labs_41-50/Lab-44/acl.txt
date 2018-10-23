@@ -1,0 +1,11 @@
+access-list 20 permit 7.0.0.0 0.255.255.255
+access-list 20 permit 30.0.0.0 0.255.255.255
+access-list 20 deny 10.0.0.0 0.255.255.255
+access-list 7 permit host 30.0.0.3
+access-list 7 permit 10.0.0.0 0.255.255.255
+access-list 7 permit 20.0.0.0 0.255.255.255
+access-list 7 deny 30.0.0.0 0.255.255.255
+access-list 10 permit 7.0.0.0 0.255.255.255
+access-list 10 permit host 30.0.0.3
+access-list 10 deny 30.0.0.0 0.255.255.255
+access-list 10 deny 20.0.0.0 0.255.255.255
